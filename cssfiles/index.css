@@ -1,0 +1,101 @@
+body {
+    margin: 0px;
+    background-color: rgb(215, 234, 253);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
+    flex-wrap: wrap;
+}
+h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 70px;
+    background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    margin: 10px 0px;
+}
+h3 {
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    margin: 10px 0px;
+}
+.container{
+    display: grid;
+    align-self: center;
+    grid-template-columns: repeat(3,200px);
+    grid-template-rows: repeat(3,200px);
+    background-color: rgb(245, 251, 251);
+    box-shadow: 20px 20px 100px #1567da ;
+}
+div.box {
+    display: flex;
+    border: 0.5px solid #30CFD0;
+    justify-content: center;
+    align-items: center; 
+    cursor: pointer;
+}
+div.box h1{
+    background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 180px;
+}
+
+@media (max-width: 600px) {
+    body {
+        margin: 0px;
+        background-color: rgb(215, 234, 253);
+        display: flex;
+        justify-content: center;
+        align-items:flex-start;
+        flex-wrap: wrap;
+    }
+    h1 {
+        width: 100%;
+        text-align: center;
+        font-size: 40px;
+        background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        /* margin: 5px 0px; */
+    }
+    h3 {
+        width: 100%;
+        text-align: center;
+        background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        position: relative;
+        top:-104px
+        /* margin: 5px 0px; */
+    }
+    .container{
+        display: grid;
+        align-self: center;
+        grid-template-columns: repeat(3,100px);
+        grid-template-rows: repeat(3,100px);
+        background-color: rgb(245, 251, 251);
+        box-shadow: 20px 20px 100px #1567da ;
+        position: relative;
+        top:-200px
+    }
+    div.box {
+        display: flex;
+        border: 0.5px solid #30CFD0;
+        justify-content: center;
+        align-items: center; 
+        cursor: pointer;
+    }
+    div.box h1{
+        background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 90px;
+    }
+
+}
