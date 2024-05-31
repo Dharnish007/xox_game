@@ -11,14 +11,14 @@ npm install
 ```
 ## Initial Setup
 
-Before executing the tests, you need to configure the device address and access token. Open the configuration file and update the device address and access token on line number 14:
+Before execution please make sure to change the device address and access_token in line number 14 (example.spec.ts). 
 
 ## Running the Tests
 
 ```sh
-npm install
+npx playwright test --headed
 ```
 
 ## Execution Output
-After the tests are executed, you can view the detailed execution output and waterfall analysis at the following URL:
+Waterfall URL:
 https://ui.headspin.io/sessions/c9a4e884-1f54-11ef-975b-0619812ca8d1/waterfall
